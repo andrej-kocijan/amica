@@ -48,8 +48,9 @@ h1 {
 	height: 91vh;
 	display: flex;
 	flex-direction: column;
-	padding: 20px;
-	justify-content: space-around;
+	padding: 3vw 2vh;
+    gap: 5vh;
+    margin-top: 2vh;
 }
 
 .phone_template {
