@@ -228,3 +228,52 @@ h1 {
     display: flex;
 	flex-direction: column;
 }
+
+
+/* GUIDE PAGE */
+.guide {
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-content: center;
+}
+
+.guide_question {
+    margin-left: 2vw;
+    font-weight: bold;
+}
+
+.guide_answer {
+    font-weight: lighter;
+    font-style: italic;
+}
+
+/* Q&A */
+
+.questions {
+    display: flex;
+    flex-direction: column;
+    margin: 1vw;
+    margin-bottom: 1vw;
+    margin-bottom: 29vh;
+}
+
+.question {
+    padding: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border: 1px solid black;
+}
+.question:hover {
+    opacity: 0.8;
+}
+.answer {
+    display: none;
+    padding-left: 20px;
+    font-weight: lighter;
+    font-style: italic;
+}
+.arrow_question{
+    margin-right: 5px;
+}
