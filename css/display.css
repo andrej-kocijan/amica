@@ -252,6 +252,7 @@ h1 {
     flex-direction: column;
     justify-content: space-evenly;
     align-content: center;
+    overflow: scroll;
 }
 
 .guide_question {
@@ -278,7 +279,7 @@ h1 {
     margin-bottom: 10px;
     cursor: pointer;
     border: 1px solid black;
-    font-size: 1vw;
+    font-size: 70%;
     border-radius: 2vh;
 }
 .question:hover {
