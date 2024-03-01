@@ -1,66 +1,85 @@
-<!DOCTYPE html>
+<!doctype html>
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
 
-    <title>HCI Prototype</title> 
-    <link href="https://fonts.cdnfonts.com/css/holly-bale" rel="stylesheet">
+    <title>HCI Prototype</title>
+    <link href="https://fonts.cdnfonts.com/css/holly-bale" rel="stylesheet" />
     <link href="../css/display.css" rel="stylesheet" />
 </head>
+
 <body>
     <main>
         <div class="phone">
             <div class="phone_content">
                 <div class="top">
-                    <div style="display: inline-flex;">
+                    <div style="display: inline-flex">
                         <a href="sections_transport.html" id="arrow">⬅</a>
-                        <h1 style="padding-left: 3.5vw;">Transport</h1>
+                        <h1 style="padding-left: 3.5vw">Transport</h1>
                     </div>
-                    
+
                     <div class="search_bar">
-                        <input type="text" placeholder="Search...">
-                        <button class="search_button"><img style="height: inherit;" src="../images/search-icon.webp" alt="Search"></button>
+                        <input type="text" placeholder="Search..." />
+                        <button class="search_button">
+                            <img style="height: inherit" src="../images/search-icon.webp" alt="Search" />
+                        </button>
                     </div>
                 </div>
                 <div class="questions">
                     <div class="question transport" onclick="toggleAnswer(1)">
-                        <span class="arrow_question">▶</span> What is this?
-                        <div class="answer" id="answer1">This is that.</div>
+                        <span class="arrow_question">▶</span> Will they check for my ticket
+                        on public transport?
+                        <div class="answer" id="answer1">
+                            You do not have to validate your monthly tickets each ride, but
+                            controls are performed at random (and they are not that rare). If
+                            you are using a student ticket, they may ask you for your mecenat
+                            card as well.
+                        </div>
                     </div>
                     <div class="question transport" onclick="toggleAnswer(2)">
-                        <span class="arrow_question">▶</span> Why is this?
-                        <div class="answer" id="answer2">This is why.</div>
-                    </div> 
+                        <span class="arrow_question">▶</span> Do I require a mecenat card
+                        to purchase a students ticket?
+                        <div class="answer" id="answer2">
+                            A mecenat card is not required for purchasing, but your ticket is
+                            invalid without a mecenat card.
+                        </div>
+                    </div>
                     <div class="question transport" onclick="toggleAnswer(3)">
-                        <span class="arrow_question">▶</span> Who is this?
-                        <div class="answer" id="answer3">This is who.</div>
-                    </div>  
+                        <span class="arrow_question">▶</span> Tram or bus?
+                        <div class="answer" id="answer3">Plane</div>
+                    </div>
                     <div class="question transport" onclick="toggleAnswer(4)">
-                        <span class="arrow_question">▶</span> What is this?
-                        <div class="answer" id="answer4">This is that.</div>
+                        <span class="arrow_question">▶</span> Is the public transport fast?
+                        <div class="answer" id="answer4">Sometimes</div>
                     </div>
                     <div class="question transport" onclick="toggleAnswer(5)">
-                        <span class="arrow_question">▶</span> Why is this?
-                        <div class="answer" id="answer5">This is why.</div>
-                    </div> 
+                        <span class="arrow_question">▶</span> What is the penalty for being
+                        caught with no ticket?
+                        <div class="answer" id="answer5">
+                            750SEK if you are under 18 years of age, 1500SEK else, so buy your
+                            ticket!
+                        </div>
+                    </div>
                     <div class="question transport" onclick="toggleAnswer(6)">
-                        <span class="arrow_question">▶</span> Who is this?
-                        <div class="answer" id="answer6">This is who.</div>
-                    </div>                    
+                        <span class="arrow_question">▶</span> Should I board before letting
+                        passenger get off?
+                        <div class="answer" id="answer6">Please don't!</div>
+                    </div>
                 </div>
             </div>
-            <img class="phone_template" src="../images/phone_template.png"> 
+            <img class="phone_template" src="../images/phone_template.png" />
         </div>
     </main>
 </body>
 
 <script>
     function toggleAnswer(id) {
-        var answer = document.getElementById('answer' + id);
-        if (answer.style.display === 'none' || answer.style.display === '') {
-            answer.style.display = 'block';
+        var answer = document.getElementById("answer" + id);
+        if (answer.style.display === "none" || answer.style.display === "") {
+            answer.style.display = "block";
         } else {
-            answer.style.display = 'none';
+            answer.style.display = "none";
         }
     }
 </script>
