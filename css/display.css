@@ -123,7 +123,8 @@ h1 {
 	border: 2px solid black;
 	border-radius: 10px;
 	overflow: hidden;
-	margin: 0 1vw;
+	margin: 0 calc(15px + 0.8vw); 
+    /* le calc pour avoir une largeur min sur petit ecran */
     background-color: white;
 }
 
@@ -156,11 +157,13 @@ h1 {
 
 /* CATEGORY SECTIONS */
 #arrow {
-    padding-left: 1vw; 
+    padding-left:calc(10px + 1vw);
+ 
     text-decoration: none; 
     font-family: 'Holly Bale', sans-serif; 
     color:black;
-    font-size: 2vw;
+    font-size:calc(15px + 1vw);
+    
     align-self: center;
 }
 .section_row {
@@ -290,9 +293,9 @@ h1 {
 .answer {
     display: none;
     padding-left: 20px;
-    font-weight: lighter;
+    /* font-weight: lighter; We cant read it on smartphone...*/ 
     font-style: italic;
-    font-size: 80%;
+    font-size: 100%;
 }
 .arrow_question{
     margin-right: 5px;
